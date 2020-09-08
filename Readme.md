@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Михаил Волощенко](https://up.htmlacademy.ru/htmlcss/29/user/1244119).
-* Наставник: `Неизвестно`.
+* Наставник: [Артем Шомин] (https://htmlacademy.ru/profile/sirnet).
 
 ---
 
