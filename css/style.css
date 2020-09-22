@@ -61,6 +61,7 @@
   --very-yellow: #E5A722;
   --gray: #DFDFDF;
   --more-gray: #D5D5D5;
+  --very-gray: #E1E1E1;
   --less-white: #DBDBDB;
   --active: rgba(0, 0, 0, 0.0001);
   --pressing: rgba(0, 1, 1, 0.1);
@@ -128,7 +129,7 @@ img {
 
 /* Wrapper */
 
-.wrapper {
+.features {
   background-color: var(--basic-extra-light);
 }
 
@@ -147,6 +148,8 @@ img {
 
 .features-button {
   background-color: var(--basic-red);
+  width: 240px;
+  height: 50px;
 }
 
 /* Market */
@@ -163,10 +166,12 @@ img {
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
+  text-transform: uppercase;
 }
 
 .market-button {
-  <--тут будут размеры кнопок в маркете-->
+  width: 160px;
+  height: 50px;
 }
 
 .market-button-notebook {
@@ -280,6 +285,8 @@ img {
 
 .contacts-button {
   background-color: var(--basic-red);
+  width: 219px;
+  height: 50px;
 }
 
 /* Footer-social */
@@ -302,7 +309,10 @@ img {
 }
 
 .social-item {
-  <--тут будут размеры иконок соц сетей-->
+  background-color: var(--very-gray);
+  width: 81px;
+  height: 81px;
+  border-radius: 50%;
 }
 
 .social-button {
