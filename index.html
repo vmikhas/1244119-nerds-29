@@ -19,16 +19,20 @@
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="">Контакты</a></li>
         </ul>
-        <a class="basket-link" href="">Корзина</a>
+        <a class="basket-link" href="">
+          <img src="img/cart-icon.svg" width="15" height="11">
+          Корзина
+        </a>
       </nav>
     </header>
 
-    <main class="wrapper">
-      <h1>Дизайн-студия Нёрдс</h1>
+    <main class="container">
+      <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
 
       <section class="features">
-        <h2>О нас</h2>
-        <p class="features-advantages">Долго, дорого, скурпулезно.</p>
+        <h2 class="visually-hidden">О нас</h2>
+        <p class="features-advantages">Долго, дорого,<br>
+          скурпулезно.</p>
         <p class="features-description">Математически выверенный дизайн<br>
            для вашего сайта или мобильного приложения.</p>
         <a class="button features-button" href="">Узнать больше</a>
@@ -38,7 +42,7 @@
       </section>
 
       <section class="market">
-        <h2>Маркет</h2>
+        <h2 class="visually-hidden">Маркет</h2>
         <ul class="market-list">
           <li class="market-item">
             <h3>Веб-сайты</h3>
@@ -61,81 +65,110 @@
         </ul>
       </section>
 
-      <section class="content">
-        <h2 class="content-heading">Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
-        <p class="content-description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <ul class="content-list">
-          <h3 class="content-list-heading">Выполняем заказы на разработку:</h3>
-          <li class="content-item">Веб-сайтов любой сложности</li>
-          <li class="content-item">Мобильных приложений для iOS и Android</li>
-          <li class="content-item">Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
-      </section>
+      <div class="features-info">
+        <section class="content">
+          <h2 class="content-heading">Мы - маленькая, но гордая<br>
+            дизайн-студия из Краснодара.</h2>
+          <p class="content-description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
+          превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <ul class="content-list">
+            <h3 class="content-list-heading">Выполняем заказы на разработку:</h3>
+            <li class="content-item">Веб-сайтов любой сложности</li>
+            <li class="content-item">Мобильных приложений для iOS и Android</li>
+            <li class="content-item">Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </section>
 
-      <section class="statistics">
-        <img src="img/nerds-illustration 1.png" width="360" height="208" alt="Логотоп Nerds на фоне конфетти">
-        <ul class="statistics-list">
+        <section class="statistics">
+          <img src="img/nerds-illustration 1.png" width="360" height="208" alt="Логотоп Nerds на фоне конфетти">
           <h2 class="statistics-heading">C 2004 года любим точность во всем:</h2>
-          <li class="statistics-item">
-            146<sup class="percent">%</sup>
-            <p class="statistics-description">Уровень самоотдачи</p>
-          </li>
-          <li class="statistics-item">
-            100<sup class="percent">%</sup>
-            <p class="statistics-description">Соблюдние сроков</p>
-          </li>
-          <li class="statistics-item">
-            50<sup class="percent">%</sup>
-            <p class="statistics-description">Минимальная предоплата</p>
-          </li>
-        </ul>
-      </section>
+          <ul class="statistics-list">
+            <li class="statistics-item">
+              146<sup class="percent">%</sup>
+              <p class="statistics-description">Уровень самоотдачи</p>
+            </li>
+            <li class="statistics-item">
+              100<sup class="percent">%</sup>
+              <p class="statistics-description">Соблюдние сроков</p>
+            </li>
+            <li class="statistics-item">
+              50<sup class="percent">%</sup>
+              <p class="statistics-description">Минимальная предоплата</p>
+            </li>
+          </ul>
+        </section>
+      </div>
 
       <section class="template">
-        <h2>Шаблоны</h2>
-        <img src="img/Group 5.svg" width="199" height="67.82" alt="Логотип HTML Academy с прозрачностью">
-        <img src="img/logo-2 1.png" width="209" height="90" alt="Логотип Барбершоп Бородинский с прозрачностью">
-        <img src="img/logo-3 1.svg" width="185" height="52" alt="Логотип PINK с прозрачностью">
-        <img src="img/logo-4 1.svg" width="173" height="84" alt="Логотип MISHKA с прозрачностью">
+        <h2 class="visually-hidden">Шаблоны</h2>
+        <div class="features-template">
+          <a class="template-link" href="">
+            <img src="img/Group 5.png" width="199" height="67.82" alt="Логотип HTML Academy с прозрачностью">
+          </a>
+          <a class="template-link" href="">
+            <img src="img/logo-2 2.png" width="209" height="90" alt="Логотип Барбершоп Бородинский с прозрачностью">
+          </a>
+          <a class="template-link" href="">
+            <img src="img/logo-3 2.png" width="185" height="52" alt="Логотип PINK с прозрачностью">
+          </a>
+          <a class="template-link" href="">
+            <img src="img/logo-4 2.png" width="173" height="84" alt="Логотип MISHKA с прозрачностью">
+          </a>
+        </div>
       </section>
     </main>
 
     <footer class="page-footer main-footer">
 
-      <section class="footer-map">
-        <h2>Как нас найти</h2>
-        <img src="img/map 1.jpg" width="1140" height="416" alt="Карта Санкт-Петербурга. Пересечение Волынского переулка с Большой Конюшенной улицей">
-        <img src="img/map-marker 1.png" width="231" height="190" alt="Маркер с логотипом Nerds">
-      </section>
+      <div class="footer-1">
+        <section class="footer-map">
+          <h2 class="visually-hidden">Как нас найти</h2>
+          <img src="img/map 1.jpg" width="1440" height="416" alt="Карта Санкт-Петербурга. Пересечение Волынского переулка с Большой Конюшенной улицей">
+          <div class="map-marker">
+            <img src="img/map-marker 1.png" width="231" height="190" alt="Маркер с логотипом Nerds">
+          </div>
+        </section>
 
-      <section class="footer-contacts">
-        <h2>Контактная информация</h2>
-        <p class="contacts-subtitle">
-          NЁRDS DESING STUDIO
-        </p>
-        <p class="contacts-description">
-          191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8<br>
-          <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-        </p>
-        <a class="button contacts-button" href="">Напишите нам</a>
-      </section>
+        <section class="footer-contacts">
+          <h2 class="visually-hidden">Контактная информация</h2>
+          <p class="contacts-subtitle">
+            NЁRDS DESING STUDIO
+          </p>
+          <p class="contacts-description">
+            191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8<br>
+            <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+          </p>
+          <a class="button contacts-button" href="">Напишите нам</a>
+        </section>
+      </div>
 
-      <section class="footer-social">
-        <p class="social-subtitle">Давайте дружить, это выгодно!</p>
-        <p class="social-description">Скидка 10% для друзей из социальных сетей.</p>
-        <ul class="social-list">
-          <li class="social-item">
-            <a class="social-button" href="img/vk-icon.svg">Вконтакте</a>
-          </li>
-          <li class="social-item">
-            <a class="social-button" href="img/fb-icon.svg">Фейсбук</a>
-          </li>
-          <li class="social-item">
-            <a class="social-button" href="img/insta-icon.svg">Инстаграмм</a>
-          </li>
-        </ul>
-      </section>
+      <div class="container">
+        <section class="footer-sale">
+          <p class="social-subtitle">Давайте дружить, это выгодно!</p>
+          <p class="social-description">Скидка 10% для друзей из социальных сетей.</p>
+        </section>
+
+        <section class="footer-social">
+          <ul class="social-list">
+            <li class="social-item">
+              <a class="social-link" href="img/vk-icon.svg">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="img/fb-icon.svg">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="img/insta-icon.svg">
+                <span class="visually-hidden">Инстаграмм</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
 
     </footer>
   </body>
