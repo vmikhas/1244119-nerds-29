@@ -122,6 +122,8 @@ img {
   color: var(--basic-black);
   background-color: var(--basic-extra-light);
   text-transform: uppercase;
+  outline: 5px solid rgba(255, 125, 0, 0.3);
+  outline-offset: -5px;
 }
 
 .site-navigation {
@@ -392,12 +394,13 @@ img {
 }
 
 .template-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 260px;
   height: 183px;
   margin: 0 auto;
-}
-
-.template-link {
   opacity: 0.2;
 }
 
