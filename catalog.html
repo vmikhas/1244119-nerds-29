@@ -11,7 +11,7 @@
 
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="">
+        <a class="main-header-logo" href="#">
           <img src="img/nerds-logo.svg" width="159.87" height="65.02" alt="Логотип Нёрдс">
         </a>
         <ul class="site-navigation">
@@ -20,7 +20,7 @@
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="">Контакты</a></li>
         </ul>
-        <a class="basket-link" href="">
+        <a class="basket-link" href="#">
           <img src="img/cart-icon.svg" width="15" height="11">
           Корзина
         </a>
@@ -37,56 +37,66 @@
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
 
         <form class="filter" method="GET" action="#">
-          <fieldset>
+          <fieldset class="filter-item">
             <legend class="filter-title">Стоимость:</legend>
-            <input type="range" min="0" max="15000" step="1000">
-            <div>
-              <label for="filter-min-price">От</label>
-              <input class="" type="number" name="min-price" id="filter-min-price" min="0" max="1500" step="100" value="0">
-              <label for="filter-man-price">До</label>
-              <input class="" type="number" name="max-price" id="filter-man-price" min="0" max="1500" step="100" value="1500">
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0"></div>
+                <div class="toggle toggle-max" tabindex="0"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">
+                  От<input type="number" name="min-price" min="0" max="1500" step="100" value="0">
+                </label>
+                <label class="max-price">
+                  До<input type="number" name="max-price min="0" max="1500" step="100" value="15000">
+                </label>
+              </div>
             </div>
           </fieldset>
 
-          <fieldset>
+          <fieldset class="radio-item">
             <legend class="filter-title">Сетка:</legend>
-            <ul>
+            <ul class="filter-radio-item">
               <li class="filter-option filter-radio">
-                <input class="filter-input-radio filter-input" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
                 <label for="filter-adaptive">Адаптивная</label>
               </li>
               <li class="filter-option filter-radio">
-                <input class="filter-input-radio filter-input" type="radio" name="grid" value="fixed" id="filter-fixed">
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="grid" value="fixed" id="filter-fixed">
                 <label for="filter-fixed">Фиксированная</label>
               </li>
               <li class="filter-option filter-radio">
-                <input class="filter-input-radio filter-input" type="radio" name="grid" value="rubber" id="filter-rubber">
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="grid" value="rubber" id="filter-rubber">
                 <label for="filter-rubber">Резиновая</label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset>
+          <fieldset class="checkbox-item">
             <legend class="filter-title">Особенности:</legend>
-            <ul>
+            <ul class="filter-checkbox-item">
               <li class="filter-option filter-checkbox">
-                <input class="filter-input-checkbox filter-input" type="checkbox" name="slider" id="filter-slider" checked>
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="slider" id="filter-slider" checked>
                 <label for="filter-slider">Слайдер</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="filter-input-checkbox filter-input" type="checkbox" name="block-advantages" id="filter-block-advantages">
+                <input class=" visually-hidden filter-input-checkbox filter-input" type="checkbox" name="block-advantages" id="filter-block-advantages">
                 <label for="filter-block-advantages">Блок преимуществ</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="filter-input-checkbox filter-input" type="checkbox" name="news" id="filter-news" checked>
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="news" id="filter-news" checked>
                 <label for="filter-news">Новости</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="filter-input-checkbox filter-input" type="checkbox" name="gallery" id="filter-gallery">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="gallery" id="filter-gallery">
                 <label for="filter-gallery">Галерея</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="filter-input-checkbox filter-input" type="checkbox" name="basket" id="filter-basket">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="basket" id="filter-basket">
                 <label for="filter-basket">Корзина</label>
               </li>
             </ul>
@@ -102,10 +112,10 @@
           <div class="sorting">
             <h3 class="filter-title">Сортировать:</h3>
             <ul class="sorting-list">
-              <li class="sorting-item">По цене</li>
+              <li class="sorting-item current">По цене</li>
               <li class="sorting-item">По типу</li>
               <li class="sorting-item">По названию</li>
-              <li class="sorting-item">
+              <li class="sorting-item current">
                 <a class="sorting-button" href="#">
                   <span class="visually-hidden">Вниз</span>
                   <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10L0 0h11" fill="#231F20"/></svg>
@@ -121,8 +131,15 @@
           </div>
 
           <ul class="list-template">
-            <li class="list-template-item">
-              <img src="img/Mask Group.jpg" width="358" height="578" alt="Шаблон информационного сайта городка Седона для туристов">
+            <li class="list-template-item list-template-item-current">
+              <div class="slider-controls slider-controls-current">
+                <button type="button" aria-label="Первый слайд"></button>
+                <button type="button" aria-label="Второй слайд"></button>
+                <button type="button" aria-label="Третий слайд"></button>
+              </div>
+              <div class="item-pic">
+                <img src="img/Mask Group.jpg" width="358" height="578" alt="Шаблон информационного сайта городка Седона для туристов">
+              </div>
               <div class="purchase-block">
                 <h3 class="purchase-block-title">Sedona</h3>
                 <p class="purchase-block-desc">Информационный сайт<br>
@@ -131,7 +148,14 @@
               </div>
             </li>
             <li class="list-template-item">
-              <img src="img/Mask Group (1).jpg" width="358" height="578" alt="Шаблон приложения Pink APP для смартфонов">
+              <div class="slider-controls">
+                <button type="button" aria-label="Первый слайд"></button>
+                <button type="button" aria-label="Второй слайд"></button>
+                <button type="button" aria-label="Третий слайд"></button>
+              </div>
+              <div class="item-pic">
+                <img src="img/Mask Group (1).jpg" width="358" height="578" alt="Шаблон приложения Pink APP для смартфонов">
+              </div>
               <div class="purchase-block">
                 <h3 class="purchase-block-title">Pink App</h3>
                 <p class="purchase-block-desc">Продуктовый лендинг<br>
@@ -140,7 +164,14 @@
               </div>
             </li>
             <li class="list-template-item">
-              <img src="img/Mask Group (2).jpg" width="358" height="578" alt="Шаблон салона красоты Барбершоп Бородинский">
+              <div class="slider-controls">
+                <button type="button" aria-label="Первый слайд"></button>
+                <button type="button" aria-label="Второй слайд"></button>
+                <button type="button" aria-label="Третий слайд"></button>
+              </div>
+              <div class="item-pic">
+                <img src="img/Mask Group (2).jpg" width="358" height="578" alt="Шаблон салона красоты Барбершоп Бородинский">
+              </div>
               <div class="purchase-block">
                 <h3 class="purchase-block-title">Barbershop</h3>
                 <p class="purchase-block-desc">Сайт салона красоты.<br>
@@ -149,7 +180,14 @@
               </div>
             </li>
             <li class="list-template-item">
-              <img src="img/Mask Group (3).jpg" width="358" height="578" alt="Шаблон магазина товаров ручной работы Mishka">
+              <div class="slider-controls">
+                <button type="button" aria-label="Первый слайд"></button>
+                <button type="button" aria-label="Второй слайд"></button>
+                <button type="button" aria-label="Третий слайд"></button>
+              </div>
+              <div class="item-pic">
+                <img src="img/Mask Group (3).jpg" width="358" height="578" alt="Шаблон магазина товаров ручной работы Mishka">
+              </div>
               <div class="purchase-block">
                 <h3 class="purchase-block-title">Mishka</h3>
                 <p class="purchase-block-desc">Интернет-магазин<br>
@@ -158,8 +196,15 @@
               </div>
             </li>
             <li class="list-template-item">
-              <img src="img/Mask Group (4).jpg" width="358" height="578" alt="Шаблон онлайн курсов A Plus">
-              <div class="purchase-block">
+              <div class="slider-controls">
+                <button type="button" aria-label="Первый слайд"></button>
+                <button type="button" aria-label="Второй слайд"></button>
+                <button type="button" aria-label="Третий слайд"></button>
+              </div>
+              <div class="item-pic">
+                <img src="img/Mask Group (4).jpg" width="358" height="578" alt="Шаблон онлайн курсов A Plus">
+              </div>
+                <div class="purchase-block">
                 <h3 class="purchase-block-title">A Plus</h3>
                 <p class="purchase-block-desc">Лендинг курсов повышения<br>
                   квалификации</p>
@@ -167,7 +212,14 @@
               </div>
             </li>
             <li class="list-template-item">
-              <img src="img/Mask Group (5).jpg" width="358" height="578" alt="Шаблон крафтового кваса Kvast">
+              <div class="slider-controls">
+                <button type="button" aria-label="Первый слайд"></button>
+                <button type="button" aria-label="Второй слайд"></button>
+                <button type="button" aria-label="Третий слайд"></button>
+              </div>
+              <div class="item-pic">
+                <img src="img/Mask Group (5).jpg" width="358" height="578" alt="Шаблон крафтового кваса Kvast">
+              </div>
               <div class="purchase-block">
                 <h3 class="purchase-block-title">Кваст</h3>
                 <p class="purchase-block-desc">Промо-сайт производителя<br>
@@ -187,7 +239,7 @@
             <li class="pagination-item">
               <a href="#">3</a>
             </li>
-            <li class="pagination-item">
+            <li class="pagination-item pagination-item-next">
               <a href="#">Следующая</a>
             </li>
           </ul>
