@@ -20,10 +20,9 @@
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="">Контакты</a></li>
         </ul>
-        <a class="basket-link" href="#">
-          <img src="img/cart-icon.svg" width="15" height="11">
-          Корзина
-        </a>
+        <div class="user-navigation">
+          <a class="basket-link" href="#">Корзина</a>
+        </div>
       </nav>
     </header>
 
@@ -62,16 +61,22 @@
             <legend class="filter-title">Сетка:</legend>
             <ul class="filter-radio-item">
               <li class="filter-option filter-radio">
-                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
-                <label for="filter-adaptive">Адаптивная</label>
+                <label>
+                  <input class="visually-hidden filter-input-radio" type="radio" name="grid" value="adaptive" checked>
+                  Адаптивная
+                </label>
               </li>
               <li class="filter-option filter-radio">
-                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="grid" value="fixed" id="filter-fixed">
-                <label for="filter-fixed">Фиксированная</label>
+                <label>
+                  <input class="visually-hidden filter-input-radio" type="radio" name="grid" value="fixed">
+                  Фиксированная
+                </label>
               </li>
               <li class="filter-option filter-radio">
-                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="grid" value="rubber" id="filter-rubber">
-                <label for="filter-rubber">Резиновая</label>
+                <label>
+                  <input class="visually-hidden filter-input-radio" type="radio" name="grid" value="rubber">
+                  Резиновая
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -80,24 +85,35 @@
             <legend class="filter-title">Особенности:</legend>
             <ul class="filter-checkbox-item">
               <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="slider" id="filter-slider" checked>
-                <label for="filter-slider">Слайдер</label>
+                <label>
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="slider" checked>
+                  <span class="checkbox"></span>
+                  Слайдер
+                </label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class=" visually-hidden filter-input-checkbox filter-input" type="checkbox" name="block-advantages" id="filter-block-advantages">
-                <label for="filter-block-advantages">Блок преимуществ</label>
+                <label>
+                  <input class=" visually-hidden filter-input-checkbox" type="checkbox" name="block-advantages">
+                  Блок преимуществ
+                </label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="news" id="filter-news" checked>
-                <label for="filter-news">Новости</label>
+                <label>
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="news" checked>
+                  Новости
+                </label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="gallery" id="filter-gallery">
-                <label for="filter-gallery">Галерея</label>
+                <label>
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="gallery">
+                  Галерея
+                </label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="basket" id="filter-basket">
-                <label for="filter-basket">Корзина</label>
+                <label>
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="basket">
+                  Корзина
+                </label>
               </li>
             </ul>
 
@@ -261,13 +277,13 @@
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
         <p class="contacts-subtitle">
-          NЁRDS DESING STUDIO
+          NЁRDS DESIGN STUDIO
         </p>
         <p class="contacts-description">
           191186, Санкт-Петербург,<br>
           ул. Б. Конюшенная, д. 19/8<br>
-          <a class="phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
         </p>
+        <a class="phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
         <a class="button contacts-button" href="">Напишите нам</a>
       </section>
     </div>
