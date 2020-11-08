@@ -38,7 +38,7 @@
               <p class="features-description">Математически выверенный дизайн<br>
                 для вашего сайта или мобильного приложения.</p>
               <a class="button features-button" href="#">Узнать больше</a>
-              <img src="img/nerds-index-slide1 1.jpg" width="760" height="431" alt="Смартфоны">
+              <img src="img/nerds-index-slide1 1.png" width="760" height="431" alt="Смартфоны">
             </div>
             <!--
             <div class="slide-2">
@@ -47,7 +47,7 @@
               <p class="features-description">Никакого креатива, только математические формулы<br>
                 для расчета идеальных пропорций</p>
               <a class="button features-button" href="">Узнать больше</a>
-              <img src="img/nerds-index-slide2 1.jpg" width="760" height="431" alt="Моноблоки">
+              <img src="img/nerds-index-slide2 1.png" width="760" height="431" alt="Моноблоки">
             </div>
             <div class="slide-3">
               <p class="features-advantages">Только ночь,<br>
@@ -55,7 +55,7 @@
               <p class="features-description">Работать днем, как все? Мы против этого.<br>
                 Ближе к полуночи работа только начинается.</p>
               <a class="button features-button" href="">Узнать больше</a>
-              <img src="img/nerds-index-slide3 1.jpg" width="760" height="431" alt="Планшеты">
+              <img src="img/nerds-index-slide3 1.png" width="760" height="431" alt="Планшеты">
             </div>
           -->
           </div>
@@ -96,7 +96,7 @@
         <div class="features-info">
           <section class="content">
             <div>
-              <h2 class="content-heading">Мы - маленькая, но гордая<br>
+              <h2 class="content-heading">Мы &#8212; маленькая, но гордая<br>
                 дизайн-студия из Краснодара.</h2>
               <p class="content-description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
                 превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -105,7 +105,7 @@
           </section>
 
           <section class="statistics">
-            <div>
+            <div class="statistics-1">
               <ul class="content-list">
                 <li class="content-list-heading">Выполняем заказы на разработку:</li>
                 <li class="content-item">Веб-сайтов любой сложности</li>
@@ -113,7 +113,7 @@
                 <li class="content-item">Слайдшоу и видео для корпоративных презентаций</li>
               </ul>
             </div>
-            <div>
+            <div class="statistics-2">
               <h3 class="statistics-heading">C 2004 года любим точность во всем:</h3>
               <ul class="statistics-list">
                 <li class="statistics-item">
@@ -123,7 +123,7 @@
                 </li>
                 <li class="statistics-item">
                   100<sup class="percent">%</sup>
-                  <p class="statistics-description">Соблюдние<br>
+                  <p class="statistics-description">Соблюдение<br>
                     сроков</p>
                 </li>
                 <li class="statistics-item">
@@ -140,7 +140,7 @@
           <h2 class="visually-hidden">Шаблоны</h2>
           <ul class="features-template">
             <li class="features-template-item">
-              <a class="template-link" href="#">
+              <a class="template-link template-link-left" href="#">
                 <img src="img/Group 5.png" width="199" height="67.82" alt="Чёрно-белый логотип HTML Academy с прозрачностью">
               </a>
             </li>
@@ -155,7 +155,7 @@
               </a>
             </li>
             <li class="features-template-item">
-              <a class="template-link" href="#">
+              <a class="template-link template-link-right" href="#">
                 <img src="img/logo-4 2.png" width="173" height="84" alt="Чёрно-белый логотип MISHKA с прозрачностью">
               </a>
             </li>
@@ -178,7 +178,7 @@
         <section class="footer-contacts">
           <h2 class="visually-hidden">Контактная информация</h2>
           <p class="contacts-subtitle">
-            NЁRDS DESING STUDIO
+            Nёrds design studio
           </p>
           <p class="contacts-description">
             191186, Санкт-Петербург,<br>
@@ -224,22 +224,27 @@
     </footer>
 
     <section class="modal">
-      <h2 class="modal-title">Напишите нам</h2>
-      <form class="form" action="" method="post">
-        <p class="modal-subtitle">
-          <label for="name">Ваше имя:</label>
-          <input class="modal-lead" type="text" name="name" id="name" placeholder="Имя Фамилия">
-        </p>
-        <p class="modal-subtitle">
-          <label for="login-email">Ваш email:</label>
-          <input class="modal-lead" type="email" name="email" id="login-email" placeholder="email@example.com" autocomplete="on">
-        </p>
-        <p class="modal-subtitle">
-          <label for="text">Текст письма:</label>
-          <input class="modal-lead" type="text" name="text" id="text" placeholder="В свободной форме">
-        </p>
-        <a class="button modal-button" href="">Отправить</a>
-      </form>
+      <div>
+        <h2 class="modal-title">Напишите нам</h2>
+        <form class="modal-form" action="" method="post">
+          <div>
+            <p class="modal-subtitle">
+              <label for="name">Ваше имя:</label><br>
+              <input class="modal-lead" type="text" name="name" id="name" placeholder="Имя Фамилия" required>
+            </p>
+            <p class="modal-subtitle">
+              <label for="login-email">Ваш email:</label><br>
+              <input class="modal-lead" type="email" name="email" id="login-email" placeholder="email@example.com" required autocomplete="on">
+            </p>
+          </div>
+          <p class="modal-subtitle">
+            <label for="text">Текст письма:</label><br>
+            <textarea class="modal-lead" type="text" name="text" id="text" placeholder="В свободной форме" required></textarea>
+          </p>
+          <button class="button modal-button" type="submit" href="">Отправить</button>
+        </form>
+        <button class="modal-close" type="button" aria-label="Закрыть"></button>
+      </div>
     </section>
   </body>
 </html>
