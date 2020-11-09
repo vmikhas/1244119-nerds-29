@@ -2,42 +2,42 @@
 
 /* roboto-regular - latin_cyrillic */
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/roboto-v20-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
-  src: local('Roboto'), local('Roboto-Regular'),
-       url('../fonts/roboto-v20-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/roboto-v20-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/roboto-v20-latin_cyrillic-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+  src: url("../fonts/roboto-v20-latin_cyrillic-regular.eot"); /* IE9 Compat Modes */
+  src: local("Roboto"), local("Roboto-Regular"),
+       url("../fonts/roboto-v20-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/roboto-v20-latin_cyrillic-regular.woff") format("woff"), /* Modern Browsers */
+       url("../fonts/roboto-v20-latin_cyrillic-regular.ttf") format("truetype"), /* Safari, Android, iOS */
+       url("../fonts/roboto-v20-latin_cyrillic-regular.svg#Roboto") format("svg"); /* Legacy iOS */
 }
 /* roboto-500 - latin_cyrillic */
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/roboto-v20-latin_cyrillic-500.eot'); /* IE9 Compat Modes */
-  src: local('Roboto Medium'), local('Roboto-Medium'),
-       url('../fonts/roboto-v20-latin_cyrillic-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/roboto-v20-latin_cyrillic-500.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/roboto-v20-latin_cyrillic-500.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/roboto-v20-latin_cyrillic-500.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/roboto-v20-latin_cyrillic-500.svg#Roboto') format('svg'); /* Legacy iOS */
+  src: url("../fonts/roboto-v20-latin_cyrillic-500.eot"); /* IE9 Compat Modes */
+  src: local("Roboto Medium"), local("Roboto-Medium"),
+       url("../fonts/roboto-v20-latin_cyrillic-500.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/roboto-v20-latin_cyrillic-500.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/roboto-v20-latin_cyrillic-500.woff") format("woff"), /* Modern Browsers */
+       url("../fonts/roboto-v20-latin_cyrillic-500.ttf") format("truetype"), /* Safari, Android, iOS */
+       url("../fonts/roboto-v20-latin_cyrillic-500.svg#Roboto") format("svg"); /* Legacy iOS */
 }
 /* roboto-700 - latin_cyrillic */
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/roboto-v20-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
-  src: local('Roboto Bold'), local('Roboto-Bold'),
-       url('../fonts/roboto-v20-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/roboto-v20-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/roboto-v20-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/roboto-v20-latin_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/roboto-v20-latin_cyrillic-700.svg#Roboto') format('svg'); /* Legacy iOS */
+  src: url("../fonts/roboto-v20-latin_cyrillic-700.eot"); /* IE9 Compat Modes */
+  src: local("Roboto Bold"), local("Roboto-Bold"),
+       url("../fonts/roboto-v20-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/roboto-v20-latin_cyrillic-700.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/roboto-v20-latin_cyrillic-700.woff") format("woff"), /* Modern Browsers */
+       url("../fonts/roboto-v20-latin_cyrillic-700.ttf") format("truetype"), /* Safari, Android, iOS */
+       url("../fonts/roboto-v20-latin_cyrillic-700.svg#Roboto") format("svg"); /* Legacy iOS */
 }
 
 /* Variables */
@@ -78,7 +78,7 @@ body {
   min-width: 1440px;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -113,6 +113,7 @@ img {
   width: 100%;
   background-color: var(--basic-extra-light);
   margin: 0 auto;
+  padding-top: 43px;
 }
 
 .main-navigation {
@@ -258,8 +259,14 @@ img {
   background-color: var(--very-yellow);
 }
 
+.features-button:active span,
+.market-button:active span {
+  color: var(--basic-white);
+  opacity: 0.3;
+}
+
 .buy-button {
-  background-color: black;
+  background-color: var(--basic-black);
 }
 
 /* Wrapper */
@@ -366,6 +373,7 @@ img {
 .features-button {
   background-color: var(--basic-red);
   display: inline-block;
+  vertical-align: auto;
   padding-top: 16px;
   padding-bottom: 16px;
   padding-left: 54px;
@@ -429,6 +437,7 @@ img {
 
 .market-item a {
   display: inline-block;
+  vertical-align: auto;
   margin: 0;
   padding-top: 17px;
   padding-right: 40px;
@@ -747,7 +756,7 @@ img {
 
 .price-controls label {
   text-transform: uppercase;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
 }
 
@@ -795,7 +804,7 @@ img {
   content: "";
   width: 25px;
   height: 25px;
-  background-image: url('data:image/svg+xml,%3Csvg width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M0 12.5C0 5.597 5.597 0 12.5 0S25 5.597 25 12.5 19.403 25 12.5 25 0 19.403 0 12.5zm21 0C21 7.813 17.187 4 12.5 4 7.813 4 4 7.813 4 12.5c0 4.687 3.813 8.5 8.5 8.5 4.687 0 8.5-3.813 8.5-8.5z" fill="%234D4D4D"/%3E%3C/svg%3E');
+  background-image: url("data:image/svg+xml,%3Csvg width='25' height='25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 12.5C0 5.597 5.597 0 12.5 0S25 5.597 25 12.5 19.403 25 12.5 25 0 19.403 0 12.5zm21 0C21 7.813 17.187 4 12.5 4 7.813 4 4 7.813 4 12.5c0 4.687 3.813 8.5 8.5 8.5 4.687 0 8.5-3.813 8.5-8.5z' fill='%234D4D4D'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   position: absolute;
   top: -4px;
@@ -808,7 +817,7 @@ img {
   content: "";
   width: 9px;
   height: 9px;
-  background-image: url('data:image/svg+xml,%3Csvg width="9" height="9" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M4.5 9a4.5 4.5 0 100-9 4.5 4.5 0 000 9z" fill="%234D4D4D"/%3E%3C/svg%3E');
+  background-image: url("data:image/svg+xml,%3Csvg width='9' height='9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.5 9a4.5 4.5 0 100-9 4.5 4.5 0 000 9z' fill='%234D4D4D'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   position: absolute;
   top: 4px;
@@ -850,7 +859,7 @@ img {
   content: "";
   height: 23px;
   width: 23px;
-  background-image: url('data:image/svg+xml,%3Csvg width="23" height="23" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M3 0h17a3 3 0 013 3v17a3 3 0 01-3 3H3a3 3 0 01-3-3V3a3 3 0 013-3zm18 3c0-.54-.46-1-1-1H3c-.54 0-1 .46-1 1v17c0 .54.46 1 1 1h17c.54 0 1-.46 1-1V3z" fill="%234D4D4D"/%3E%3C/svg%3E');
+  background-image: url("data:image/svg+xml,%3Csvg width='23' height='23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3 0h17a3 3 0 013 3v17a3 3 0 01-3 3H3a3 3 0 01-3-3V3a3 3 0 013-3zm18 3c0-.54-.46-1-1-1H3c-.54 0-1 .46-1 1v17c0 .54.46 1 1 1h17c.54 0 1-.46 1-1V3z' fill='%234D4D4D'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   position: absolute;
   top: -2px;
@@ -861,7 +870,7 @@ img {
 
 .filter-input-checkbox:checked + label::before {
   width: 25px;
-  background-image: url('data:image/svg+xml,%3Csvg width="25" height="23" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M6.96 8.49l-2.7 2.82 7.43 7.79L25 5.17l-2.7-2.83-10.6 11.1-4.74-4.95z" fill="%234D4D4D"/%3E%3Cpath d="M21 20c0 .54-.46 1-1 1H3c-.54 0-1-.46-1-1V3c0-.54.46-1 1-1h16.9L21.5.42A2.96 2.96 0 0020 0H3a3 3 0 00-3 3v17a3 3 0 003 3h17a3 3 0 003-3v-9.83l-2 2V20z" fill="%234D4D4D"/%3E%3C/svg%3E');
+  background-image: url("data:image/svg+xml,%3Csvg width='25' height='23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.96 8.49l-2.7 2.82 7.43 7.79L25 5.17l-2.7-2.83-10.6 11.1-4.74-4.95z' fill='%234D4D4D'/%3E%3Cpath d='M21 20c0 .54-.46 1-1 1H3c-.54 0-1-.46-1-1V3c0-.54.46-1 1-1h16.9L21.5.42A2.96 2.96 0 0020 0H3a3 3 0 00-3 3v17a3 3 0 003 3h17a3 3 0 003-3v-9.83l-2 2V20z' fill='%234D4D4D'/%3E%3C/svg%3E");
 }
 
 .filter-input-checkbox:hover + label::before,
@@ -1075,6 +1084,7 @@ img {
 
 .buy-button {
   display: inline-block;
+  vertical-align: auto;
   padding: 16px 72px;
   background-color: var(--basic-red);
   text-align: center;
@@ -1200,9 +1210,15 @@ img {
 
 /* Main-footer */
 
-.footer-map {
+.map-container {
   position: relative;
-  margin-bottom: 68px;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.footer-map-image {
+  display: block;
+
 }
 
 .map-marker {
@@ -1212,18 +1228,16 @@ img {
 }
 
 .main-footer {
+  position: relative;
   display: grid;
   grid-template-rows: 1fr min-content;
   margin: 0;
   padding: 0;
 }
 
-.footer-1 {
-  display: grid;
-  margin: 0 auto;
-  padding: 0;
-  z-index: 0;
-  position: relative;
+.map-wrap {
+  background-color: var(--basic-extra-light);
+  margin-bottom: 68px;
 }
 
 .footer-contacts {
@@ -1254,12 +1268,9 @@ img {
   width: 261px;
   column-gap: 9px;
   list-style: none;
-  margin: 0 auto;
+  margin: 0;
   margin-bottom: 68px;
   padding: 0;
-  position: absolute;
-  top: -6px;
-  left: 0;
 }
 
 .social-link {
@@ -1273,8 +1284,10 @@ img {
 }
 
 .footer-sale {
-  position: relative;
-  margin-left: 139px;
+  margin: 0;
+  padding: 0;
+  margin-left: 109px;
+  margin-top: 7px;
 }
 
 .social-subtitle {
@@ -1282,18 +1295,17 @@ img {
   font-size: 36px;
   line-height: 36px;
   color: var(--basic-black);
-  position: absolute;
-  top: -36px;
-  left: -30px;
+  margin: 0;
+  padding: 0;
 }
 
 .social-description {
   font-size: 16px;
   line-height: 22px;
   color: var(--basic-dark);
-  position: absolute;
-  top: 30px;
-  left: -30px;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
 }
 
 /* Modal */
@@ -1369,6 +1381,7 @@ img {
 
 .modal-button {
   display: inline-block;
+  vertical-align: auto;
   padding-left: 83px;
   padding-top: 17px;
   padding-right: 83px;
